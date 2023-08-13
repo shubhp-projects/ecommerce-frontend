@@ -11,7 +11,7 @@ const config = {
   appId: '1:745135815071:web:c52d00a0912d11bfde25aa',
 };
 
-export const creatUserProfileDocument = async (userAuth, additionalData) => {
+export const createUserProfileDocument = async (userAuth, additionalData) => {
   if (!userAuth) return;
 
   const userRef = firestore.doc(`users/${userAuth.uid}`);
